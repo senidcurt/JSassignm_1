@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        h1,h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Ovo je vas rezultat:</h1>
+    <h2 id="res"></h2>
+</body>
+</html>
+
+<script>
+
+let r = parseInt(prompt("Unesi vrijednost poluprecnika:"));
+let h = parseInt(prompt("Unesi visinu:"));
+const PI = 3.14;
+
+let v = (r*r) * PI * h;
+
+document.getElementById('res').innerHTML = v;
+console.log(v);
+</script>
